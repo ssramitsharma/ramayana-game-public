@@ -17,15 +17,15 @@ This is a **public showcase repo** for a private Godot 4 game project where I tr
 ```mermaid
 flowchart LR
   subgraph Godot[Godot 4 Game]
-    ENV[Headless RL runner\n(stdin/stdout JSON)]
-    LIVE[Live TCP bridge\n(127.0.0.1:5555)]
-    SIM[Game simulation\n(Ram scripted, Rakshasa controlled)]
+    ENV[Headless RL runner<br/>(stdin/stdout JSON)]
+    LIVE[Live TCP bridge<br/>(127.0.0.1:5555)]
+    SIM[Game simulation<br/>(Ram scripted, Rakshasa controlled)]
     ENV --> SIM
     LIVE --> SIM
   end
 
   subgraph Python[Python]
-    PPO[PPO policy\n(Stable-Baselines3)]
+    PPO[PPO policy<br/>(Stable-Baselines3)]
     EVAL[Evaluation runner]
   end
 
